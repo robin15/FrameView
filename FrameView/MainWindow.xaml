@@ -1,0 +1,18 @@
+﻿<Window x:Name="Main"
+        x:Class="FrameView.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FrameView"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="#01FFFFFF"
+        ResizeMode="CanResizeWithGrip"
+        Title="MainWindow" Height="360" Width="640" Topmost="True" WindowState="Normal">
+    <Grid x:Name="FrameField">
+        <Border BorderBrush="#FF59ABFF" BorderThickness="3,3,3,3" Opacity="0.5"/>
+        <Rectangle x:Name="Frame" Stroke="Yellow" Fill="Transparent" Canvas.Left="100" Canvas.Top="25" />
+    </Grid>
+</Window>

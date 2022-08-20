@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+option csharp_namespace = "Frame.Grpc";
+
+import "google/protobuf/empty.proto";
+
+// The Frame service definition.
+service FrameService {
+  // Request FrameData
+  rpc RequestFrameData (google.protobuf.Empty) returns (FrameData) {}
+
+  // Receive FrameData Stream
+  rpc ReceiveFrameDataStream (google.protobuf.Empty) returns (stream FrameData) {}
+}
+
+// FrameData
+message FrameData{
+  int32 num = 1;
+  repeated Frame frames = 2;
+}
+
+// Frame
+message Frame{
+	int32 color = 1;
+	int32 style = 2;
+	double x1 = 3;
+	double y1 = 4;
+	double x2 = 5;
+	double y2 = 6;
+}
