@@ -18,6 +18,19 @@ using Frame.Grpc;
 
 namespace FrameView
 {
+    public enum Color
+    {
+        Unknown = 0,
+        Red = 1,
+        Blue = 2
+    }
+
+    public enum Style
+    {
+        Unknown = 0,
+        Solid = 1,
+        Dashed = 2
+    }
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
